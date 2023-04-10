@@ -1,0 +1,45 @@
+body{
+  font-family: 'Oswald', sans-serif; 
+}
+
+.elemento {
+  opacity: 0; 
+  animation: aparecer 1s ease forwards; 
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1; 
+  }
+}
+
+.integrantes {
+  transform: translateX(-100%); 
+  animation: desplazamiento 1s ease forwards; 
+}
+
+@keyframes desplazamiento {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.descripcion {
+  transform: translateX(100%); 
+  animation: desplazamientoxd 1s ease forwards; 
+}
+
+@keyframes desplazamientoxd {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
